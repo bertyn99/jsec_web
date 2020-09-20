@@ -1,0 +1,13 @@
+#form-etudiant {
+    width: 800px;
+}
+
+#Professor {
+    display: none;
+}
+
+#signature {
+    width: 350px;
+    height: 350px;
+    border: 2px;
+}
