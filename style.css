@@ -9,5 +9,10 @@
 #signature {
     width: 350px;
     height: 350px;
-    border: 2px;
+    border: 2px solid black;
+}
+
+#etudiant{
+    width: 800px;
+    margin: auto 
 }

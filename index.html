@@ -27,34 +27,70 @@
       </nav>
     </header>
 
-    <section class="container mx-auto">
-      <h1 class="text-center py-5">Etudiant</h1>
-      <form id="form-etudiant" class="mx-auto">
-        <div class="form-group">
-          <label for="inputNom">Nom</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputNom"
-            aria-describedby="emailHelp"
-          />
+    <section id="etudiant">
+      <div class="container mx-auto">
+        <h1 class="text-center py-5">Etudiant</h1>
+        <div >
+          <form id="form-etudiant" class="mx-auto">
+              <div class="form-group">
+                <label for="inputNom">Nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputNom"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputPrenom">Prenom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPrenom"
+                />
+              </div>
+              <div class="form-group ">
+                <label for="inputSignature" class="p-3">Signature</label>
+                <br>
+                <canvas id="signature" width="350" height="250">
+                  
+                </canvas>
+                <button type="button"  class="btn btn-outline-warning">erase</button>
+            </div>
+              <button type="button" onclick="register()" class="btn btn-warning"> signer </button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="inputPrenom">Prenom</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputPrenom"
-          />
-        </div>
-        <button type="button" onclick="register()" class="btn btn-primary"> signer </button>
-      </form>
-      <section id="etudiant">
-          <canvas id="signature" width="350" height="250">uhugu</canvas>
-      </section>
+        
+      
+      </div>
+   
     </section>
 
-    <section id="Classroom"></section>
+    <section id="classroom" hidden>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">FirstName</th>
+              <th scope="col">LastName</th>
+              <th scope="col">Signature</th>
+            </tr>
+          </thead>
+          <tbody id="class">
+           
+          </tbody>
+        </table>
+      </div>
+      <template id="eleve"> 
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
+    </section>
     <section id="Professor">
       <h1 class="text-center py-5">Professeur</h1>
      <!--  <form id="form-etudiant" class="mx-auto">
