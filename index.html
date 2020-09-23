@@ -52,10 +52,8 @@
               <div class="form-group ">
                 <label for="inputSignature" class="p-3">Signature</label>
                 <br>
-                <canvas id="signature" width="350" height="250">
-                  
-                </canvas>
-                <button type="button"  class="btn btn-outline-warning">erase</button>
+                <canvas id="signature" width="600" height="250" style="border:1px solid #000;"></canvas>
+                <button type="button"  onclick="clearSignature()" class="btn btn-outline-warning">erase</button>
             </div>
               <button type="button" onclick="register()" class="btn btn-warning"> signer </button>
           </form>
@@ -67,7 +65,7 @@
     </section>
 
     <section id="classroom" hidden>
-      <div class="container">
+      <div class="container mx-auto">
         <table class="table">
           <thead>
             <tr>
@@ -77,14 +75,12 @@
               <th scope="col">Signature</th>
             </tr>
           </thead>
-          <tbody id="class">
-           
-          </tbody>
+          <tbody id="class"></tbody>
         </table>
       </div>
       <template id="eleve"> 
-        <tr>
-          <th scope="row">1</th>
+        <tr class="ligne">
+          <th scope="row"></th>
           <td></td>
           <td></td>
           <td></td>
