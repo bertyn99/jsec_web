@@ -7,11 +7,20 @@
 }
 
 #signature {
-    width: 600px;
+    width: 500px;
     height: 250px;
 }
 
-#etudiant{
+td {
+    padding: auto;
+}
+
+.sig {
+    width: 80px;
+    height: 40px;
+}
+
+#etudiant {
     width: 800px;
-    margin: auto 
+    margin: auto
 }
